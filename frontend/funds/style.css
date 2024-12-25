@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: #121351;
+    overflow: hidden;
+}
+.container {
+    display: flex;
+}
+.nav{
+    position: relative;
+    margin: 2vh;
+    margin-right: 0;
+    top: 0;
+    bottom: 0;
+    height: 96vh;
+    left: 0;
+    background: #fff;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    transition: 0.5s width linear;
+}
+.logo {
+    text-align: center;
+    padding: 15px;
+}
+.logo img{
+    width: 60px;
+    height: 60px;
+}
+.nav a{
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    padding: 10px;
+    display: flex;
+}
+a span {
+    position: relative;
+    left: 100%;
+    transition: 0.5s all linear;
+}
+.nav .fas{
+    width: 50px;
+    height: 40px;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.nav-item{
+    margin-left: 10px;
+}
+li a:hover{
+    background: #eee;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.nav:hover {
+    width: 250px;
+}
+.nav:hover span {
+    left: 0px;
+}
+
+/* for the main section */
+.main {
+    margin: 2vh;
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+}
+.main-item {
+    background-color: #fff;
+    margin-bottom: 2vh;
+    border-radius: 15px;
+    padding: 20px;
+}
+.header {
+    display: flex;
+}
+.heading {
+    color: #545252;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+}
+.sub-heading {
+    color: #545252;
+    font-size: small;
+}
+.header .accessibility {
+    margin-left: auto;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.accessibility img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+/* FUNDS */
+.funds-projects {
+    display: flex;
+
+}
+.frame {
+    flex-grow: 1;
+    text-align: center;
+}
+.item-frame {
+    background-color: white;
+    margin-right: 2vh;
+    margin-bottom: 2vh;
+    border-radius: 15px;
+    flex-grow: 1;
+    color: #545252;
+}
+.total-funds, .approved-projects {
+    padding: 50px;
+}
+.completed-projects, .remaining-projects {
+    margin-right: 0;
+    padding-top: 10px;
+}
+.completed-funds, .remaining-funds {
+    padding-top: 10px;
+}
+.funds-details, .projects-details {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* for the projects bar */
+.projects-header {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.projects-container {
+    flex-grow: 1;
+    position: relative;
+}
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    border: 2px solid #cccccc;
+    padding: 0;
+}
+.search-bar input {
+    flex-grow: 1;
+    padding-left: 30px;
+}
+.search-bar button {
+    padding: 18px 40px;
+    margin: 0;
+}
+.projects-list {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 250px;
+}
+.project-item {
+    width: 98%;
+    background-color: #f5f5fc;
+    border: 2px solid #cccccc;
+    margin-bottom: 15px;
+    padding: 20px;
+}
+#donut-chart {
+    position: absolute;
+    padding: 20px;
+    width: 400px;
+    left: 700px;
+    background-color: white;
+    border: 2px solid #cccccc;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    top: 0;
+    height: 400px;
+    padding: 20px;
+    overflow: hidden;
+    transition: height 1s;
+}
+.push {
+    position: absolute;
+    background-color: #eee;
+    top: 0;
+    left: 700px;
+    width: 400px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    z-index: 444444;
+}
+

@@ -1,0 +1,92 @@
+.admin-items {
+  display: none;
+  padding: 30px;
+  width: 100%;
+}
+.admin-default {
+  display: block;
+  top: 0;
+}
+#projects-list {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 500px;
+  position: relative;
+}
+.project-item {
+  width: 98%;
+  border: 2px solid #cccccc;
+  margin-bottom: 15px;
+  padding: 20px;
+  background-color: #ede9e9;
+  cursor: pointer;
+}
+.project-item:hover {
+  position: relative;
+  right: 5px;
+  bottom: 5px;
+}
+.project-item h4 {
+  color: #545252;
+}
+.project-item {
+  display: flex;
+  align-items: center;   
+}
+
+.project-label {
+  display: flex;
+  align-items: center;
+}
+.project-label input {
+    position: absolute;
+    right: -150px;
+}
+.project-label label {
+    position: absolute;
+    right: 51px;
+}
+
+.project-info {
+  flex: 1;
+}
+.project-info h4 {
+  margin-bottom: 5px;
+}
+.buttons {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  align-items: center;
+}
+.buttons input[type="number"] {
+  width: 500px;
+}
+.buttons input[type="radio"] {
+  width: 20px;
+}
+.buttons input[type="submit"] {
+  position: relative;
+  left: 120px;
+  
+}
+.buttons label{
+  margin-right: 20px;
+}
+#close {
+  width: 100%;
+  background-color: #cccccc;
+  height: 40px;
+  position: relative;
+  /* bottom: -10px; */
+}
+.feedback-item {
+  background-color: #ede9e9;
+  padding: 20px;
+  margin-bottom: 7px;
+}
+.security-item {
+  padding: 20px;
+  margin-top: 10px;
+  background-color: #ede9e9;
+}

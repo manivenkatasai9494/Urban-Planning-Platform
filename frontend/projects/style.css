@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #121351;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+}
+.nav {
+  position: relative;
+  margin: 2vh;
+  margin-right: 0;
+  top: 0;
+  bottom: 0;
+  height: 96vh;
+  left: 0;
+  background: #fff;
+  width: 100px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  transition: 0.5s width linear;
+}
+.logo {
+  text-align: center;
+  padding: 15px;
+}
+.logo img {
+  width: 60px;
+  height: 60px;
+}
+.nav a {
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+}
+a span {
+  position: relative;
+  left: 100%;
+  transition: 0.5s all linear;
+}
+.nav .fas {
+  width: 50px;
+  height: 40px;
+  font-size: 20px;
+  margin-left: 30px;
+}
+.nav-item {
+  margin-left: 10px;
+}
+li a:hover {
+  background: #eee;
+}
+.logout {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.nav:hover {
+  width: 250px;
+}
+.nav:hover span {
+  left: 0px;
+}
+
+/* for the main section */
+.main {
+  margin: 2vh;
+  margin-bottom: 0;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+}
+.main-item {
+  background-color: #fff;
+  margin-bottom: 2vh;
+  border-radius: 15px;
+  padding: 20px;
+}
+.header {
+  display: flex;
+}
+.heading {
+  color: #545252;
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bold;
+}
+.sub-heading {
+  color: #545252;
+  font-size: small;
+}
+.header .accessibility {
+  margin-left: auto;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.accessibility img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* for the projects bar */
+.projects-header {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.projects-container {
+  flex-grow: 1;
+}
+.projects-header button {
+  padding: 18px 40px;
+  margin-right: 2vh;
+  cursor: pointer;
+}
+.search-bar {
+  flex-grow: 1;
+  display: flex;
+  border: 2px solid #cccccc;
+  padding: 0;
+}
+.search-bar input {
+  flex-grow: 1;
+  padding-left: 30px;
+}
+.search-bar button {
+  margin: 0;
+}
+#projects-list {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 415px;
+}
+.project-item {
+  width: 98%;
+  border: 2px solid #cccccc;
+  margin-bottom: 15px;
+  padding: 20px;
+  background-color: #f5f5fc;
+  cursor: pointer;
+}
+.project-item:hover {
+  position: relative;
+  left: -5px;
+  top: -5px;
+}
+.project-item h4 {
+  color: #545252;
+}
+.project-item p {
+  font-size: small;
+}
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  display: none; /* Initially hidden */
+}
+
+#centeredDiv {
+  border: 2px solid #545252;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Box shadow for the centered div */
+  display: none; /* Initially hidden */
+}
+.inner-block {
+    border-radius: 10px;
+    border: 2px solid #545252;
+    padding: 20px 50px;
+}
+.inner-block input[type="submit"] {
+    padding: 7px 14px;
+    cursor: pointer;
+}
+.inner-block input[type="submit"]:hover {
+    background-color: rgb(98, 119, 237);
+    color: white;
+}
+
+#title,
+#desc {
+  border: 2px solid #cccccc;
+  border-radius: 10px;
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+#desc {
+  width: 100%;
+}
+#vote {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#vote:hover {
+  background-color: rgb(98, 119, 237);
+  color: white;
+}
+#centeredDiv-project {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 1000; /* Ensure it's above the overlay */
+  display: none; /* Initially hide it */
+}
+.inner-block h2, p {
+  margin-bottom: 10px;
+}
+
