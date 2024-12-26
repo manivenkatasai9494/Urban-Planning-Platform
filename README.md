@@ -61,8 +61,8 @@ The **Urban Planning Platform** is a web application that allows community membe
 Feel free to fork the repository and submit pull requests. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Contact
-- **Author**: [Yaswanth](https://www.linkedin.com/in/yashwanth-reddy0620)
-- **Email**: yashwanth.k0620@gmail.com
+- **Author**: [Mani Venkata Sai](https://www.linkedin.com/in/manivenkatasaimedam/)
+- **Email**: medammani4@gmail.com
 
 
 
